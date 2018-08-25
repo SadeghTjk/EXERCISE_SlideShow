@@ -13,7 +13,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/pic1" />
+        android:visibility="invisible"
+         />
 
     <Button
         android:id="@+id/nextbtn"
@@ -22,8 +23,9 @@
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="11dp"
-        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="25dp"
+        android:alpha="0.85"
         android:text="Next"
         android:textSize="12sp" />
 
@@ -34,7 +36,8 @@
         android:layout_height="60dp"
         android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/nextbtn"
-        android:layout_marginStart="118dp"
+        android:layout_marginStart="25dp"
+        android:alpha="0.85"
         android:padding="0dp"
         android:text="Previous"
         android:textSize="12sp" />
@@ -46,12 +49,12 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="#7d582753"
+        android:background="#7d6eb6f5"
         android:fontFamily="@font/moriacitadel"
         android:text="Rick and Morty"
         android:textAlignment="center"
         android:textColor="#fff"
-        android:textSize="18sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/number"
@@ -59,11 +62,23 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/nameview"
         android:layout_centerHorizontal="true"
+        android:background="#7d6eb6f5"
         android:fontFamily="@font/moriacitadel"
-        android:background="#7d582753"
         android:text="1"
         android:textAlignment="center"
         android:textColor="#fff"
-        android:textSize="18sp" />
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/moriacitadel"
+        android:gravity="center"
+        android:text="Watch Amazing \n 4K Pictures"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textColor="#ff26be"
+        android:textColorHighlight="@color/colorPrimary"/>
 
 </RelativeLayout>

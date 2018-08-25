@@ -17,9 +17,10 @@ public class SlideActivity extends AppCompatActivity {
     TextView nameview;
     String names[] = {"Rick and Morty","Supreme Simpson", "Supreme", "Monster", "Infinity"};
     int nums[] = {1,2,3,4,5};
-    int images[] = {R.drawable.pic1,R.drawable.pic2,R.drawable.pic3,R.drawable.pic4,R.drawable.pic5};
+    int images[] = {R.drawable.moon,R.drawable.paris,R.drawable.london,R.drawable.lake,R.drawable.house};
     int index = 0;
-
+    View ivView ;
+    View welcome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,10 +30,12 @@ public class SlideActivity extends AppCompatActivity {
         prev = findViewById(R.id.prebtn);
         number = findViewById(R.id.number);
         nameview = findViewById(R.id.nameview);
-
+        ivView = findViewById(R.id.iv);
+        welcome = findViewById(R.id.welcome);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 index++;
                 if (index == images.length){
                     index = 0;
@@ -47,6 +50,7 @@ public class SlideActivity extends AppCompatActivity {
         prev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 index--;
                 if (index == -1){
                     index = images.length-1;
