@@ -6,14 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class SlideActivity extends AppCompatActivity {
 
     ImageView iv;
     Button next;
     Button prev;
-    int images[] = {R.drawable.fan2,R.drawable.runeterra,R.drawable.fan1,R.drawable.fan3};
+    TextView number;
+    TextView nameview;
+    String names[] = {"Rick and Morty","Supreme Simpson", "Supreme", "Monster", "Infinity"};
+    int nums[] = {1,2,3,4,5};
+    int images[] = {R.drawable.pic1,R.drawable.pic2,R.drawable.pic3,R.drawable.pic4,R.drawable.pic5};
     int index = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +27,8 @@ public class SlideActivity extends AppCompatActivity {
         iv = findViewById(R.id.iv);
         next = findViewById(R.id.nextbtn);
         prev = findViewById(R.id.prebtn);
+        number = findViewById(R.id.number);
+        nameview = findViewById(R.id.nameview);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +38,8 @@ public class SlideActivity extends AppCompatActivity {
                     index = 0;
                 }
                 iv.setImageResource(images[index]);
+                number.setText(""+nums[index]);
+                nameview.setText(""+names[index]);
             }
 
         });
@@ -42,6 +52,8 @@ public class SlideActivity extends AppCompatActivity {
                     index = images.length-1;
                 }
                 iv.setImageResource(images[index]);
+                number.setText(""+nums[index]);
+                nameview.setText(""+names[index]);
             }
         });
     }

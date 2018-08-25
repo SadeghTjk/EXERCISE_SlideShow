@@ -1,29 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SlideActivity"
-    android:orientation="vertical">
+    tools:context=".SlideActivity">
 
     <ImageView
         android:id="@+id/iv"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/fan2" />
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/pic1" />
 
     <Button
         android:id="@+id/nextbtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Next" />
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="108dp"
+        android:text="Next"
+        android:textSize="12sp" />
 
     <Button
         android:id="@+id/prebtn"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/nextbtn"
+        android:layout_marginStart="118dp"
+        android:padding="0dp"
+        android:text="Previous"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/nameview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Previous" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#7d582753"
+        android:fontFamily="@font/moriacitadel"
+        android:text="Rick and Morty"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameview"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/moriacitadel"
+        android:background="#7d582753"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</RelativeLayout>
