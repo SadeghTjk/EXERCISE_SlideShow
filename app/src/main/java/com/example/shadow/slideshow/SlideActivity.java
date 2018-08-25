@@ -26,7 +26,7 @@ public class SlideActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 index++;
-                if (index == images.length-1){
+                if (index == images.length){
                     index = 0;
                 }
                 iv.setImageResource(images[index]);
