@@ -17,7 +17,7 @@ public class SlideActivity extends AppCompatActivity {
     TextView nameview;
     String names[] = {"Rick and Morty", "Supreme Simpson", "Supreme", "Monster", "Infinity"};
     int nums[] = {1, 2, 3, 4, 5};
-    int images[] = {R.drawable.moon, R.drawable.paris, R.drawable.london, R.drawable.lake, R.drawable.house};
+    int images[] = {R.drawable.pic1, R.drawable.pic2, R.drawable.pic3, R.drawable.pic4, R.drawable.pic5};
     int index = 0;
     View ivView;
     View welcome;
