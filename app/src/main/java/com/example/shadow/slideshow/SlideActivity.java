@@ -15,12 +15,13 @@ public class SlideActivity extends AppCompatActivity {
     Button prev;
     TextView number;
     TextView nameview;
-    String names[] = {"Rick and Morty","Supreme Simpson", "Supreme", "Monster", "Infinity"};
-    int nums[] = {1,2,3,4,5};
-    int images[] = {R.drawable.moon,R.drawable.paris,R.drawable.london,R.drawable.lake,R.drawable.house};
+    String names[] = {"Rick and Morty", "Supreme Simpson", "Supreme", "Monster", "Infinity"};
+    int nums[] = {1, 2, 3, 4, 5};
+    int images[] = {R.drawable.moon, R.drawable.paris, R.drawable.london, R.drawable.lake, R.drawable.house};
     int index = 0;
-    View ivView ;
+    View ivView;
     View welcome;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,12 +38,12 @@ public class SlideActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 index++;
-                if (index == images.length){
+                if (index == images.length) {
                     index = 0;
                 }
                 iv.setImageResource(images[index]);
-                number.setText(""+nums[index]);
-                nameview.setText(""+names[index]);
+                number.setText("" + nums[index]);
+                nameview.setText("" + names[index]);
             }
 
         });
@@ -52,12 +53,12 @@ public class SlideActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 index--;
-                if (index == -1){
-                    index = images.length-1;
+                if (index == -1) {
+                    index = images.length - 1;
                 }
                 iv.setImageResource(images[index]);
-                number.setText(""+nums[index]);
-                nameview.setText(""+names[index]);
+                number.setText("" + nums[index]);
+                nameview.setText("" + names[index]);
             }
         });
     }
