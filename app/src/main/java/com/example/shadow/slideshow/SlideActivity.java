@@ -66,5 +66,21 @@ public class SlideActivity extends AppCompatActivity {
             }
         });
 
+        welcome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                welcome.setVisibility(View.INVISIBLE);
+                index++;
+                if (index == images.length) {
+                    index = 0;
+                }
+                iv.setImageResource(images[index]);
+                number.setText("" + nums[index]);
+                nameview.setText("" + names[index]);
+            }
+
+        });
+
     }
 }
