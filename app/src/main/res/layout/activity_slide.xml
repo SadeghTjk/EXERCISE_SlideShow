@@ -28,6 +28,8 @@
         android:alpha="0.85"
         android:text="Next"
         android:textSize="12sp" />
+            android:background="@android:color/black"
+            android:background="@android:color/black"
 
     <Button
         android:id="@+id/prebtn"
@@ -49,9 +51,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="#7d6eb6f5"
         android:fontFamily="@font/moriacitadel"
         android:text="Rick and Morty"
+        android:background="@android:color/black"
         android:textAlignment="center"
         android:textColor="#fff"
         android:textSize="24sp" />
@@ -62,8 +64,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/nameview"
         android:layout_centerHorizontal="true"
-        android:background="#7d6eb6f5"
         android:fontFamily="@font/moriacitadel"
+        android:background="@android:color/black"
         android:text="1"
         android:textAlignment="center"
         android:textColor="#fff"
@@ -78,7 +80,7 @@
         android:text="Start Slideshow"
         android:textAlignment="center"
         android:textSize="60sp"
-        android:textColor="#ff26be"
         android:textColorHighlight="@color/colorPrimary"/>
+        android:textColor="@android:color/black"
 
 </RelativeLayout>
