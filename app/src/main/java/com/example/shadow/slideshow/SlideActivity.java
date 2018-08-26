@@ -37,6 +37,7 @@ public class SlideActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                welcome.setVisibility(View.INVISIBLE);
                 index++;
                 if (index == images.length) {
                     index = 0;
@@ -52,6 +53,7 @@ public class SlideActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                welcome.setVisibility(View.INVISIBLE);
                 index--;
                 if (index == -1) {
                     index = images.length - 1;
