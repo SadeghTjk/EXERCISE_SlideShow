@@ -33,6 +33,8 @@ public class SlideActivity extends AppCompatActivity {
         nameview = findViewById(R.id.nameview);
         ivView = findViewById(R.id.ImageView);
         welcome = findViewById(R.id.welcome);
+
+
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
