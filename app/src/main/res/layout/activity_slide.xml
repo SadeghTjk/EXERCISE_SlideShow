@@ -75,7 +75,7 @@
         android:layout_height="match_parent"
         android:fontFamily="@font/moriacitadel"
         android:gravity="center"
-        android:text="Watch Amazing \n 4K Pictures"
+        android:text="Start Slideshow"
         android:textAlignment="center"
         android:textSize="60sp"
         android:textColor="#ff26be"
