@@ -26,12 +26,12 @@ public class SlideActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide);
-        iv = findViewById(R.id.iv);
+        iv = findViewById(R.id.ImageView);
         next = findViewById(R.id.nextbtn);
         prev = findViewById(R.id.prebtn);
         number = findViewById(R.id.number);
         nameview = findViewById(R.id.nameview);
-        ivView = findViewById(R.id.iv);
+        ivView = findViewById(R.id.ImageView);
         welcome = findViewById(R.id.welcome);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
