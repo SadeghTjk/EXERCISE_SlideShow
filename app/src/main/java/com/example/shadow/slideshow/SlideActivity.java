@@ -21,7 +21,7 @@ public class SlideActivity extends AppCompatActivity {
     int index = 0;
     View ivView;
     View welcome;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,5 +61,6 @@ public class SlideActivity extends AppCompatActivity {
                 nameview.setText("" + names[index]);
             }
         });
+
     }
 }
