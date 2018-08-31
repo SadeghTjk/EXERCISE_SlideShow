@@ -82,5 +82,13 @@ public class SlideActivity extends AppCompatActivity {
 
         });
 
+        iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int temp1 = images[index];
+                Intent intent1 = new Intent (getApplicationContext(),FullscreenActivity.class);
+                startActivity(intent1);
+            }
+        });
     }
 }
