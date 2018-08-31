@@ -1,5 +1,6 @@
 package com.example.shadow.slideshow;
 
+import android.content.Intent;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -85,9 +86,11 @@ public class SlideActivity extends AppCompatActivity {
         iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int temp1 = images[index];
-                Intent intent1 = new Intent (getApplicationContext(),FullscreenActivity.class);
+                Intent intent1 = new Intent(getApplicationContext(),FullscreenActivity.class);
+                intent1.putExtra("picture",images[index]);
+                intent1.putExtra("name",names[index]);
                 startActivity(intent1);
+
             }
         });
     }
