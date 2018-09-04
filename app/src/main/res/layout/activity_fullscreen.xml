@@ -20,9 +20,9 @@
         android:textSize="20sp"
         android:layout_alignParentTop="true"
         android:gravity="center"
-        android:background="#000"
+        android:background="@color/black"
         android:alpha="0.7"
-        android:textColor="#fff"
+        android:textColor="@color/white"
         />
 
     <Button
@@ -32,9 +32,9 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:gravity="center"
-        android:background="#000"
+        android:background="@color/black"
         android:alpha="0.7"
-        android:textColor="#fff"
+        android:textColor="@color/white"
         android:textSize="20sp"
         />
 </RelativeLayout>
