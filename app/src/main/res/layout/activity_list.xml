@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".list"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/listy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:animationCache="false"
+        android:divider="@drawable/divider"
+        android:dividerHeight="40dp"
+        android:textAlignment="center">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:background="#000"
+        android:text="Back"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</LinearLayout>

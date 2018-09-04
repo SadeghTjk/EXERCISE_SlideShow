@@ -19,11 +19,11 @@ public class FullscreenActivity extends AppCompatActivity {
 
         ImageView fullpic = findViewById(R.id.fullpic);
         TextView picname= findViewById(R.id.picname);
+        Button backbtn = findViewById(R.id.backButton);
 
         fullpic.setImageResource(getIntent().getExtras().getInt("picture"));
         picname.setText(getIntent().getExtras().getString("name"));
 
-        Button backbtn = findViewById(R.id.backButton);
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
