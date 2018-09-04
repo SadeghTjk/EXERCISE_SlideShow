@@ -1,4 +1,4 @@
-package com.example.shadow.slideshow;
+package com.example.shadow.picslideshow;
 
 import org.junit.Test;
 

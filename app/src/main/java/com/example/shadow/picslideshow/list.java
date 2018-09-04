@@ -1,4 +1,4 @@
-package com.example.shadow.slideshow;
+package com.example.shadow.picslideshow;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +12,8 @@ import android.widget.ListView;
 public class list extends AppCompatActivity {
     String names[] = {"Rick and Morty", "Supreme Simpson", "Supreme", "Monster", "Infinity"};
     int images[] = {R.drawable.pic1, R.drawable.pic2, R.drawable.pic3, R.drawable.pic4, R.drawable.pic5};
+   //String[] images = {"file:///android_asset/pic1.jpg","file:///android_asset/pic2.jpg","file:///android_asset/pic3.jpg","file:///android_asset/pic4.jpg","file:///android_asset/pic5.jpg"};
+
     ListView lv;
     Button button ;
     @Override

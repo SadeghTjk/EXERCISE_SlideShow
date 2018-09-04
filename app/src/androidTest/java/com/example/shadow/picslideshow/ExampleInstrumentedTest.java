@@ -1,4 +1,4 @@
-package com.example.shadow.slideshow;
+package com.example.shadow.picslideshow;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

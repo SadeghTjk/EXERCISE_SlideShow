@@ -1,17 +1,14 @@
-package com.example.shadow.slideshow;
+package com.example.shadow.picslideshow;
 
 import android.content.Intent;
-import android.media.Image;
-import android.opengl.Visibility;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 public class SlideActivity extends AppCompatActivity {
 
@@ -23,6 +20,7 @@ public class SlideActivity extends AppCompatActivity {
     String names[] = {"Rick and Morty", "Supreme Simpson", "Supreme", "Monster", "Infinity"};
     int nums[] = {1, 2, 3, 4, 5};
     int images[] = {R.drawable.pic1, R.drawable.pic2, R.drawable.pic3, R.drawable.pic4, R.drawable.pic5};
+    //String[] images = {"file:///android_asset/pic1.jpg","file:///android_asset/pic2.jpg","file:///android_asset/pic3.jpg","file:///android_asset/pic4.jpg","file:///android_asset/pic5.jpg"};
     int index = -1;
     View welcome;
     Button menu;
@@ -52,6 +50,8 @@ public class SlideActivity extends AppCompatActivity {
                     index = 0;
                 }
                 iv.setImageResource(images[index]);
+                //Picasso.get().load(images[index]).into(iv);
+
                 number.setText("" + nums[index]);
                 nameview.setText("" + names[index]);
 
@@ -72,6 +72,7 @@ public class SlideActivity extends AppCompatActivity {
                 if (index <= -1) {
                     index = images.length - 1;
                 }
+                //Picasso.get().load(images[index]).into(iv);
                 iv.setImageResource(images[index]);
                 number.setText("" + nums[index]);
                 nameview.setText("" + names[index]);
